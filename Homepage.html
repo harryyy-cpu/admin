@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave & Deliver</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .features,
+        .testimonials {
+            padding: 50px 0;
+        }
+
+        .feature-grid {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .feature {
+            width: 30%;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .feature:hover {
+            background-color: #e0e0e0;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .testimonials {
+            background-color: #f4f4f4;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testimonial {
+            margin: 20px 0;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 60%;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Welcome to
+
+                 <h1 style="font-size: 48px;">Crave & Deliver</h1>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The easiest way to Tap and Deliver</h1>
+                <p>Your desires, our delivery.</p>
+            </div>
+        </section>
+
+
+        <section class="features">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="feature-grid">
+                    <div class="feature" onclick="handleClick('food')">
+                        <h3>Food</h3>
+                        <p>"Satisfy your cravings, one bite at a time."</p>
+                    </div>
+                    <div class="feature" onclick="handleClick('accessories')">
+                        <h3>Accessories</h3>
+                        <p>"Accessorize your life, elevate your style."</p>
+                    </div>
+                    <div class="feature" onclick="handleClick('pickup')">
+                        <h3>Pick up and Deliver</h3>
+                        <p>"From your door to theirs, we deliver with care."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"I really appreciate the multiple payment options."</p>
+                        <cite>- Pajares</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The website is secure, and I love the easy return policy."</p>
+                        <cite>- Delos Reyes</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Program and Developed by Harryson C.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+
+                    <li><a href="#">About Us</a></li>
+            
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        function handleClick(category) {
+            console.log(Clicked on ${category});
+
+            // Example redirects - replace with your actual URLs or actions
+            if (category === 'food') {
+                window.location.href = "/food"; 
+            } else if (category === 'accessories') {
+                window.location.href = "/accessories";
+            } else if (category === 'pickup') {
+                window.location.href = "/pickup";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
